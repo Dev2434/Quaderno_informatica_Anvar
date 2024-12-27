@@ -1,8 +1,3 @@
-Accesso rapido alla home è:
-
-http://localhost/Quaderno_di_informatica_David_Anvar/home.html
-
-----------------------------------------------------------------------------------
 APPUNTI:
 
 Sintassi di GET e POST:
@@ -36,17 +31,15 @@ Safari o Edge), mentre il motore di ricerca è un sito o servizio che utilizziam
 con il browser per cercare informazioni e siti su internet (ad esempio Google o Bing).
 
 
-URL:
+URL (appunti):
 
 get
 file:///C:/action_page.html?menu=SECONDO&cars=audi
 
 post
 file:///C:/action_page.html
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
+-------------------------------------------------------------------------------------------
 
 INDIRIZZAMENTI:
 
@@ -89,8 +82,6 @@ a) esercizio:
 localhost/Quaderno_informatica_Anvar/esercizi_slide/esercizi_slide_teoria_03/ES_a_03.html
 
 ----------------------------------------------------------------------------------------
-
-INDIRIZZO HOME: localhost/Quaderno_informatica_Anvar/home.html
 
 
 INDIRIZZAMENTI DEGLI ALTRI ESERCIZI:
