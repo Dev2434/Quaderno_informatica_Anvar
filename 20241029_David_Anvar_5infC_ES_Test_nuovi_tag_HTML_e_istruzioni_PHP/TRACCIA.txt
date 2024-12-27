@@ -1,0 +1,7 @@
+Test nuovi tag HTML e istruzioni PHP
+
+TRACCIA:
+Si richiede di creare un progetto web in HTML e PHP che richieda dei dati all'utente attraveso i form spiegati in classe. Tali dati verranno gestiti da una pagina in PHP che ne gestira i calcoli e ne resituirà i risultati. Si chiede di utilizzare tutto il codice citato nelle slide caricate nel materiale dalle slide 01... e 02...
+
+accesso alla html: 
+http://localhost/compito_20241029_/

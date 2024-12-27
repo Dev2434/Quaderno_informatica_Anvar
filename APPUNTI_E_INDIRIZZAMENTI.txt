@@ -1,0 +1,118 @@
+Accesso rapido alla home è:
+
+http://localhost/Quaderno_di_informatica_David_Anvar/home.html
+
+----------------------------------------------------------------------------------
+APPUNTI:
+
+Sintassi di GET e POST:
+
+//METODO GET CHE E' CONSIDERATO DI DEFAULT
+
+<form action="/action_page.php" method="get">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+//METODO POST
+
+<form action="/action_page.php" method="post">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+--------------------------------------------------------------------------------
+
+La differenza tra il browser e il motore di ricerca è che il browser è 
+l'applicazione che utilizziamo per navigare su internet (ad esempio Chrome, 
+Safari o Edge), mentre il motore di ricerca è un sito o servizio che utilizziamo 
+con il browser per cercare informazioni e siti su internet (ad esempio Google o Bing).
+
+
+URL:
+
+get
+file:///C:/action_page.html?menu=SECONDO&cars=audi
+
+post
+file:///C:/action_page.html
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+INDIRIZZAMENTI:
+
+Questi indirizzamenti servono per avere un accesso rapido a tutti gli esercizi fatti fino ad ora:
+
+
+indirizzamento esercizi delle slide di teoria:
+
+1) 
+Nome del PDF degli esercizi riportati: 01_primi passi html e php
+
+a) esercizio: 
+localhost/Quaderno_informatica_Anvar/esercizi_slide/esercizi_slide_teoria_01/ES_a_01.html
+
+b) esercizio:
+localhost/Quaderno_informatica_Anvar/esercizi_slide/esercizi_slide_teoria_01/ES_b_01.html
+
+c) esercizio:
+localhost/Quaderno_informatica_Anvar/esercizi_slide/esercizi_slide_teoria_01/ES_c_01.html
+
+
+
+2)
+Nome del PDF degli esercizi riportati: 02_form e php
+a) esercizio: 
+localhost/Quaderno_informatica_Anvar/esercizi_slide/esercizi_slide_teoria_02/ES_a_02.html
+
+b) esercizio:
+localhost/Quaderno_informatica_Anvar/esercizi_slide/esercizi_slide_teoria_02/ES_b_02.html
+
+c) esercizio:
+localhost/Quaderno_informatica_Anvar/esercizi_slide/esercizi_slide_teoria_02/ES_c_02.html
+
+
+
+3)
+Nome del PDF degli esercizi riportati: 202425_INF3_B_ES03 - Form validation
+a) esercizio: 
+localhost/Quaderno_informatica_Anvar/esercizi_slide/esercizi_slide_teoria_03/ES_a_03.html
+
+----------------------------------------------------------------------------------------
+
+INDIRIZZO HOME: localhost/Quaderno_informatica_Anvar/home.html
+
+
+INDIRIZZAMENTI DEGLI ALTRI ESERCIZI:
+
+1) esercizio:
+localhost/Quaderno_informatica_Anvar/20241008_David_Anvar_5ifC_ESProgettazione_Pagina_WEB/compito_20241008.html
+
+
+2) esercizio:
+localhost/Quaderno_informatica_Anvar/20241015_David_Anvar_5infC_ES_Prog1/compito_20241015.html
+
+
+3) esercizio:
+localhost/Quaderno_informatica_Anvar/20241022_David_Anvar_5infC_ES_/compito_20241022.html
+
+
+4)esercizio:
+localhost/Quaderno_informatica_Anvar/20241028_David_Anvar_5infC_ES_/compito_20241028.html
+
+
+5)esercizio:
+localhost/Quaderno_informatica_Anvar/20241029_David_Anvar_5infC_ES_Test_nuovi_tag_HTML_e_istruzioni_PHP/compito_20241029.html
+
+
+6)esercizio:
+localhost/Quaderno_informatica_Anvar/20241105_David_Anvar_5infC_ES_/compito_20241105.html

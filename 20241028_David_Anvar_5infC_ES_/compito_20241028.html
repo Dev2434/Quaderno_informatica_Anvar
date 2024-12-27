@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>esercizio 2</title>
+</head>
+<body>
+
+    <div class="container-text">
+    <h2>SPIEGAZIONE FORM</h2>
+        <p>il tag form e' l'elemento che definisce un modulo HTML. Un modulo permette agli utenti di inserire dati che poi vengono inviati a un server 
+            (ad esempio, a un file PHP).</p>
+<p>all'interno di questo form si trovano:</p>
+
+<p>action="nome_file.php" ->  Questo e' l'URL o il percorso a cui inviare i dati del modulo una volta che l'utente preme il tasto di invio. In questo caso, i dati saranno inviati al file php corrispondente che si trova nella stessa cartella del file HTML.</p>
+
+<p>method="POST" -> Indica che i dati del modulo devono essere inviati tramite il metodo POST. Questo significa che i dati non saranno visibili nell'URL del browser, ma verranno inviati nel corpo della richiesta HTTP. Il metodo POST è generalmente usato per inviare informazioni sensibili, come una password.</p>
+
+<p> il tag label -> serve per associare un testo descrittivo a un campo di input. In questo caso, il testo "Inserisci email" appare come etichetta del campo dove l'utente deve scrivere la propria email.</p>
+
+<p>Questo è un campo di input di tipo testo. L'utente può inserire la propria email. Il name="email" è importante perché il valore inserito in questo campo verrà inviato al server con il nome "email", che sarà poi accessibile nel file PHP.</p>
+
+<p>infine, c'è il bottone di invio del modulo. Quando l'utente preme questo pulsante, il modulo viene inviato al server e i dati inseriti nei campi vengono inviati al file php corrente.</p>
+
+<form action="es2.php" method="POST">
+        
+    <label for="email">Inserisci email:</label>
+    <input type="text" name="email"><br>
+    <p></p>
+    <label for="password">Inserisci password:</label>
+    <input type="text" name="password"><br><br>
+
+    <input type="submit" value="invia">     
+</form>
+</div>
+</body>
+</html>
