@@ -52,6 +52,7 @@ INDIRIZZAMENTI:
 
 Questi indirizzamenti servono per avere un accesso rapido a tutti gli esercizi fatti fino ad ora:
 
+Indirizzo della pagina principale: localhost/Quaderno_informatica_Anvar/home.html
 
 indirizzamento esercizi delle slide di teoria:
 
