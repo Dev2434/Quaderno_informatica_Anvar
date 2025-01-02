@@ -5,54 +5,6 @@ $password = $_POST['password'];
 echo "<!DOCTYPE html>
 <head>
 <title>es1</title>
-<style>
-    body{ 
-        font-family: Arial, sans-serif; 
-        background-color: #f4f4f9; 
-        margin: 0; padding: 20px; 
-        color: #333; 
-    }
-
-    h2{ 
-        color: #4CAF50; 
-        text-align: center; 
-    }
-
-    .container{ 
-        max-width: 900px; 
-        margin: 0 auto; 
-        background-color: #fff; 
-        padding: 20px; 
-        border-radius: 8px; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    }
-    .section{ 
-        margin-bottom: 20px; 
-    }
-
-    .code-block{ 
-        background-color: #f0f0f0; 
-        padding: 15px; 
-        border-left: 4px solid #4CAF50; 
-        font-family: monospace; 
-        overflow-x: auto; 
-        border-radius: 5px; 
-    }
-
-    .highlight{ 
-        color: #d9534f; 
-        font-weight: bold; 
-    }
-
-    p{ 
-        line-height: 1.6; 
-    }
-
-    strong{ 
-        color: #333;
-    }
-</style>
-
 </head>
 <body>
 <div class='container'>
