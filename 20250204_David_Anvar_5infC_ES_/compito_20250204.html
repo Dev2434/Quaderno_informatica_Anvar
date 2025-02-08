@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>UPDATE 1.3</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form action="index.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <h3>Dettagli:</h3>
+    -Avvia su XAMPP Apache e MySQL<br>
+    -Cliccare su Admin di mySQL o digitare 'localhost/phpmyadmin' nel URL<br>
+
+
+    <h3>info del DB:</h3>
+    $servername = "localhost";<br>
+    $username = "root"; <br>
+    $password = ""; <br>
+    $dbname = "update1.3"; <br>
+
+    <br>
+    <br>
+
+    <h3>Query:</h3>
+    CREATE TABLE users (<br>
+    id int NOT NULL PRIMARY KEY,<br>
+    username varchar(50) NOT NULL,<br>
+    password varchar(255),<br>
+    name varchar(50),<br>
+    surname varchar(50) <br>
+);<br>
+</body>
+</html>
