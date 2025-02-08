@@ -26,11 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href='compito_20250204.html'><button>HOME</button></a>";
         exit;
     } else {
+        
         // Inserisci i dati nel database
         $sql = "INSERT INTO users (username, password, name, surname) VALUES ('$user', '$pass', '$name', '$surname')";
         
         if ($conn->query($sql) === TRUE) {
-            echo "Registrazione effettuata con successo!' . <br> . <br>;
+            echo "Registrazione effettuata con successo!' . <br> . <br>
             <a href='compito_20250204.html'><button>HOME</button></a>";
             exit;
 
