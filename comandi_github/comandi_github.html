@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandi Github</title>
+</head>
+<body>
+    <h1>COMANDI UTILI DI GITHUB</h1>
+    <a href="../home.html" class="link-button"><button>HOME</button></a>
+    <h1>ATTENZIONE!</h1>
+    <br>
+<h2>CREDENZIALI</h2>
+
+CREATE USER 'github123'@'%' IDENTIFIED BY 'GITHUB';<br>
+GRANT SELECT, INSERT, UPDATE, DELETE ON github.* TO br'github'@'%';<br>
+FLUSH PRIVILEGES;<br>
+<br><br>
+
+<h3>PER ACCEDERE AL MIO DB INSERIRE SU http://localhost/phpmyadmin/, il seguente codice sulla console, che si trova in basso: </h3>
+GRANT ALL PRIVILEGES ON github.* TO 'github123'@'localhost' IDENTIFIED BY 'GITHUB';<br>
+FLUSH PRIVILEGES;<br>
+
+<br><hr>
+$servername = "localhost";<br>
+$username = "github123";<br>
+$password = "GITHUB";<br>
+$dbname = "github";<br>
+
+<br><br>
+CREATE TABLE comandi_di_github (<br>
+    ID_comando INT NOT NULL<br> AUTO_INCREMENT ,<br> 
+    nome_comando VARCHAR(500) NOT NULL ,<br> 
+    descrizione_comando VARCHAR(500) NOT NULL ,<br> 
+    PRIMARY KEY (ID_comando)<br>
+    );<br><br><br>
+
+    <a href="comandi_github.php" class="link-button"><button>Accedi al DB</button></a>
+</body>
+</html>

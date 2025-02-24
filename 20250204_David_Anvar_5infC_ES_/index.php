@@ -12,33 +12,43 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $user = $_POST['username'];
-    $pass = $_POST['password'];
-    
+    if (isset($_POST['username']) && isset($_POST['password'])) {
+        // Se i campi sono presenti, assegna i valori alle variabili
+        $user = $_POST['username'];
+        $pass = $_POST['password'];
+   
     // Verifica se l'utente esiste nel DB
     $sql = "SELECT * FROM users WHERE username = '$user' AND password = '$pass'";
     $result = $conn->query($sql);
     
     if ($result->num_rows > 0) {
         // Login riuscito
-        echo "Login effettuato con successo!
-        <a href='compito_20250204.html'><button>HOME</button></a>";
-        
+        echo "Login effettuato con successo!"; 
     } else {
         // Reindirizza alla pagina di registrazione
         echo "Errore le credenziali per accedere al DB sono errate!" . "<br>";
-        echo "<a href='register.php'>inserisci i tuoi dati</a>";
+        echo "<a href='register.php'>inserisci i tuoi dati</a><br><br>
+        <a href='compito_20250204.html'><button>HOME</button></a>";
         exit;
     }
 }
 
-?>
-<?php
+if (isset($_POST['delete'])) {
+    // Ottieni l'ID dell'utente da eliminare
+    $idToDelete = $_POST['id'];
+
+    // Crea la query di eliminazione
+    $sqlDelete = "DELETE FROM users WHERE id = $idToDelete";
+
+    // Esegui la query
+    if ($conn->query($sqlDelete) === TRUE) {
+    }
+}
+}
+
 //EXTRA: STAMPA DEL DATABASE
-
 $sql = "SELECT * FROM users"; // Query per selezionare tutti i dati dalla tabella 'users'
-$result = $conn->query($sql);
-
+    $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Visualizza la tabella HTML
     echo "<h2>Dati della Tabella Users</h2>";
@@ -49,6 +59,7 @@ if ($result->num_rows > 0) {
                 <th>Password</th>
                 <th>Nome</th>
                 <th>Cognome</th>
+                <th>elimina utente sulla faccia della terra</th>
             </tr>";
 
     // Estrai i dati riga per riga
@@ -59,11 +70,18 @@ if ($result->num_rows > 0) {
                 <td>" . $row["password"] . "</td>
                 <td>" . $row["name"] . "</td>
                 <td>" . $row["surname"] . "</td>
-              </tr>";
-    }
-
+                <td>
+                <form method='POST' action=''>
+                    <input type='hidden' name='id' value='" . $row['id'] . "'>
+                    <input type='submit' name='delete' value='Elimina'>
+                </form>
+                </td>
+            </tr>";
+        }
     echo "</table>";
+    echo "<br><a href='compito_20250204.html'><button>HOME</button></a>";
 } else {
     echo "0 risultati trovati";
+    echo "<br><br><a href='compito_20250204.html'><button>Torna indietro</button></a>";
 }
 ?>

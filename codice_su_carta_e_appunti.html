@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cartaceo</title>
+</head>
+<body>
+    <h1>APPUNTI PRESI IN CLASSE</h1>
+    <p></p>
+    <a href="home.html" class="link-button"><button>HOME</button></a><br>
+
+
+<br><br>
+
+&lt;?php <br>
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {<br>
+  		// Recupera i dati dal modulo HTML<br>
+  		$first_name = isset($_POST["fname"]) ? $_POST["fname"] : "";<br>
+  		$last_name = isset($_POST["lname"]) ? $_POST["lname"] : "";<br>
+          <br><br>
+  		// Stampa i dati a schermo<br>
+  		echo "Dati ricevuti dal modulo:";<br>
+  		echo "Nome: " . htmlspecialchars($first_name);<br>  // htmlspecialchars per evitare problemi di sicurezza
+  		echo "Cognome: " . htmlspecialchars($last_name)";<br>
+	} else {<br>
+  		// Se non e' una richiesta POST, mostra un messaggio di errore<br>
+  		echo "Errore: Metodo non consentito";<br>
+	}<br>
+?><br>
+
+<br><br>
+<strong>Somma di numeri randomici:</strong>
+<br><br>
+&lt;?php<br>
+$somma=0;<br>
+echo "&lt;TABLE border=1&gt;&lt;TR&gt;";<br>
+while ($somma&lt;90)<br>
+{<br>
+    $NumeroCasuale=rand(1,6);<br>
+    echo "&lt;TD&gt;$NumeroCasuale&lt;/TD&gt;";<br>
+    $somma+= $NumeroCasuale;<br>
+}<br>
+echo "&lt;/TR&gt;&lt;/TABLE&gt;";<br>
+echo "&lt;BR&gt;Somma risultante: $somma";<br>
+?>
+
+<br><br>
+    <h3>Sintassi di GET e POST:</h3>
+    <p>METODO GET CHE E' CONSIDERATO DI DEFAULT</p>
+    <img src="codice_su_carta/codice1.png" alt="Girl in a jacket" width="600" height="200">
+
+    <p>METODO POST</p>
+    <img src="codice_su_carta/codice2.png" alt="Girl in a jacket" width="600" height="200">
+
+<p>--------------------------------------------------------------------------------</p>
+
+La differenza tra il browser e il motore di ricerca è che il browser è<br>
+l'applicazione che utilizziamo per navigare su internet (ad esempio Chrome, <br>
+Safari o Edge), mentre il motore di ricerca è un sito o servizio che utilizziamo <br>
+con il browser per cercare informazioni e siti su internet (ad esempio Google o Bing).<br>
+
+<p>--------------------------------------------------------------------------------</p>
+<p>URL (appunti):</p>
+
+get: 
+file:///C:/action_page.html?menu=SECONDO&cars=audi
+
+<br>
+post:
+file:///C:/action_page.html
+
+<br><br><br><br><br><br><br><br><br><br>
+
+    <h1>CODICE SCRITTO SU CARTA</h1>
+    <p></p>
+
+    All'interno di questa pagina inserisco tutto il codice che ho imparato fino ad ora scritto su carta. <br>
+    Pubblico le foto del codice fatto su carta a prescendere dall'esercizio. <br>
+    Mentre le spiegazioni di ogni singolo esercizio sono insieme all'esercizio stesso.
+
+    <br>
+    <br>
+    <h2>Codice su carta dei form:</h2>
+    <img src="codice_su_carta/img1.png" width="60%" height="70%">
+
+    <h2>Codice su carta per il linguaggio PHP</h2>
+    <img src="codice_su_carta/img2.jpg" width="50%" height="50%">
+    <img src="codice_su_carta/img3.jpg" width="50%" height="50%">
+    <img src="codice_su_carta/img4.jpg" width="50%" height="50%">
+
+    <h2>Codice su carta per il richiamo delle variabili in PHP:</h2>
+    <img src="codice_su_carta/img5.jpg" width="50%" height="50%">
+    <img src="codice_su_carta/img6.jpg" width="50%" height="50%">
+
+    <h2>Codice su carta per il linguaggio SQL</h2>
+    <img src="codice_su_carta/img7.jpg" width="50%" height="50%">
+    <img src="codice_su_carta/img8.jpg" width="50%" height="50%">
+    <img src="codice_su_carta/img9.jpg" width="50%" height="50%">
+    <img src="codice_su_carta/img10.jpg" width="50%" height="50%">
+    <img src="codice_su_carta/img11.jpg" width="50%" height="50%">
+    <img src="codice_su_carta/img12.jpg" width="50%" height="50%">
+
+
+
+    <p></p>
+    <a href="home.html" class="link-button"><button>HOME</button></a><br>
+</body>
+</html>

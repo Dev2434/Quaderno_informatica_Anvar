@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $conn->query($sql);
     
     if ($result->num_rows > 0) {
-        echo "Questo username è già in uso!
+        echo "Questo username è già in uso! <br><br>
             <a href='compito_20250204.html'><button>HOME</button></a>";
         exit;
     } else {
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "INSERT INTO users (username, password, name, surname) VALUES ('$user', '$pass', '$name', '$surname')";
         
         if ($conn->query($sql) === TRUE) {
-            echo "Registrazione effettuata con successo!' . <br> . <br>
+            echo "Registrazione effettuata con successo! . <br> . <br>
             <a href='compito_20250204.html'><button>HOME</button></a>";
             exit;
 
@@ -61,5 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="password" name="password" required><br><br>
         <input type="submit" value="Registrati">
     </form>
+<br>
+    <a href="compito_20250204.html"><button>HOME</button></a>
 </body>
 </html>
