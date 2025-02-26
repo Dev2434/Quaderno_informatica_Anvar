@@ -2,10 +2,19 @@ Fare update al quaderno di informatica:
 
 spiegare tutti gli esercizi
 
-Chiedere al prof se il comando UNIQUE da la possibilità del fatto che un utente non possa registrarsi con le stesse credenziali di un altro utente
-
-
 ricerche:
 
 war-room
 raid
+
+Differenza tra resettare e formattare un pc.
+
+-SINTASSI:
+-LUCULLIANO:
+
+significato di tasti divelti:
+
+Cos'è un MVP:
+Cos'è un ITR:
+LAM:
+LLM:
